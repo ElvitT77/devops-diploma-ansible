@@ -71,3 +71,10 @@
         owner: ubuntu
         group: ubuntu
         mode: "0755"
+    - name: Copy compose file
+      ansible.builtin.copy:
+        src: files/compose.yaml
+        dest: /opt/devops-app/compose.yaml
+        owner: ubuntu
+        group: ubuntu
+        mode: "0644"
